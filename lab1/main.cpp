@@ -40,21 +40,64 @@ void ex1()
 
 const int ex2_maslen = 18;
 
+void ShowArray(int* mass, size_t length)
+{
+    for(int i = 0; i < length; i++) printf("%d ", mass[i]);
+    printf("\n");
+}
+
+void QSort(int* mass, int left, int right)
+{
+    int tmp = 0;
+    int l = left;
+    int r = right;
+    int mid = mass[(l+r)/2];
+    do
+    {
+        while(mass[l] > mid) l++;
+        while(mass[r] < mid) r--;
+        if(l <= r)
+        {
+            tmp = mass[l];
+            mass[l] = mass[r];
+            mass[r] = tmp;
+            l++;
+            r--;
+        }
+    }while (l<r);
+    if(left < l) QSort(mass, left, r);
+    if(l < right) QSort(mass, l, right);
+}
+
 int* InitArray()
+{
+    int* res = new int[ex2_maslen];
+    for(int i = 0; i < ex2_maslen; i++)
+    {
+        res[i] = i*i+1;
+        if(i % 2 != 0) res[i] = -res[i];
+    }
+    return(res);
+}
+
+int** ConvertArrayTo2D(int* input)
 {
 
 }
 
 void ex2()
 {
-    int* input = new int[ex2_maslen];
-
+    int* input = InitArray();
+    //for(int i = 0; i < ex2_maslen; i++) cout << input[i] << " ";
+    ShowArray(input, ex2_maslen);
+    QSort(input, 0, ex2_maslen-1);
+    ShowArray(input, ex2_maslen);
 }
 
 int main()
 {
     int num = 0;
-    ex1();
+    ex2();
     //cout << "Select exercise\n" << endl;
     //cin >> num;
     //cout << num  << endl;
