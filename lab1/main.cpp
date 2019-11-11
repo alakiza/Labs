@@ -25,6 +25,13 @@ void ProcessArray(int a[], int res[], int& count)
     }
 }
 
+//Объявить массив из n=16 целых чисел, проинициализировать единицами. Функция
+//processArray() должна заполнить элементы массива с четными индексами
+//степенями двойки (1, 2, 4, 8, 16, ...), с нечетными индексами – степенями тройки (3, 9,
+//27, ...). Также подсчитать и вернуть count – количество двузначных чисел в массиве и
+//сформировать выходной массив, содержащий только такие числа. Вывести на экран
+//результирующие массивы.
+
 void ex1()
 {
     int a[ex1_maslen] = {0};
@@ -104,6 +111,13 @@ int** ConvertArrayTo2D(int* input)
     return res;
 }
 
+//Преобразование: 1D → 2D. Одномерный массив из 18 целых чисел необходимо
+//отсортировать в порядке убывания и разложить по двумерной сетке 9х2 слева направо и
+//сверху вниз.
+//Инициализация: заполнить массив числами x[i] = i 2 +1 и все элементы с четными
+//индексами домножить на -1.
+//Вывод на экран: на каждый элемент массива отвести 5 позиций.
+
 void ex2()
 {
     int* input = InitArray();
@@ -120,7 +134,7 @@ void ex2()
     delete []input;
 }
 
-char* strcpy(char* destination, char* source)
+char* strconcat(char* destination, char* source)
 {
     int i = 0;
     for(i = 0; destination[i] != 0; i++){};
@@ -141,6 +155,16 @@ char* strcpy(char* destination, char* source)
     return res;
 }
 
+char* strcopy(char* destination, char* source)
+{
+    char* ptrd = destination;
+    char* ptrs = source;
+
+    while(*ptrd++ = *ptrs++);
+
+    return destination;
+}
+
 /*char* strcpy(char* destination, char* source)
 {
     char* ptrd = destination;
@@ -151,33 +175,63 @@ char* strcpy(char* destination, char* source)
     return destination;
 }*/
 
+//Функция strcpy .
+//Формат char* strcpy(char* dest, const char* src).
+//Функция копирует строку src в строку dest.
+
 void ex3()
 {
-    char* str1 = new char[80];
+    char* str1 = "kill me please";
     char* str2 = new char[80];
+    *str2 = '\0';
 
-    cin.getline(str1, 80);
-    cin.getline(str2, 80);
+    //fgets(str1, 80, stdin);
+    //fgets(str2, 80, stdin);
 
-    char* str3 = strcpy(str1, str2);
+    //scanf("%s", str1);
+    //scanf("%s", str2);
 
-    printf("%s\n", str1);
+    //cin.getline(str1, 5);
+    //cin.getline(str2, 5);
+//    char tmp;
+//    char*tmpptr = str1;
+//    do
+//    {
+//        cin >> tmp;
+//        *tmpptr++ = tmp;
+//    }while(tmp != 13);
+
+//    tmpptr = str2;
+//    do
+//    {
+//        cin >> tmp;
+//        *tmpptr++ = tmp;
+//    }while(tmp != 13);
+
+    //cin >> str2;
+
+    strcopy(str2, str1);
+
     printf("%s\n", str2);
-    printf("%s\n", str3);
+    *str2 = '\0';
+    strcpy(str2, str1);
 
-    delete[] str1;
+    printf("%s\n", str2);
+
+    //delete[] str1;
     delete[] str2;
-    delete[] str3;
 }
 
 int main()
 {
-    char num = 0;
+    char num = 0, trash = 0;
     do
     {
         num = 0;
         cout << "Введите номер задания(e для выхода)\n";
-        cin >> num;
+        //scanf("%c", &num);
+        num = getchar();
+        getchar();
         switch (num) {
         case '1':
             ex1();
