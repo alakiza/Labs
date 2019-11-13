@@ -16,6 +16,7 @@ public:
                 const double& Power);
 
     void Control(int Temperature);
+    virtual ~Conditioner();
 };
 
 std::ostream& operator << (std::ostream& out, Mode& mode);

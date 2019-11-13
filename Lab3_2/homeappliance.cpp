@@ -12,6 +12,7 @@ HomeAppliance::HomeAppliance()
 
 HomeAppliance::HomeAppliance(std::string Concern,
                              std::string Model,
+                             int Year,
                              double Weight,
                              double Temperature,
                              Mode mode,
@@ -19,6 +20,7 @@ HomeAppliance::HomeAppliance(std::string Concern,
 {
     fConcern = Concern;
     fModel = Model;
+    fYear = Year;
     fWeight = Weight;
     SetTemperature(Temperature);
     fMode = mode;
@@ -129,4 +131,9 @@ void HomeAppliance::PrintState()
          << "Температура : " << fTemperature << endl
          << endl
          << "Средняя температура : " << fTotalTemperature/fCount << endl;
+}
+
+HomeAppliance::~HomeAppliance()
+{
+
 }

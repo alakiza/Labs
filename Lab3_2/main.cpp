@@ -18,5 +18,8 @@ int main()
     cond1->Control(120);
     heat->Control(0);
 
+    delete cond1;
+    delete heat;
+
     return 0;
 }

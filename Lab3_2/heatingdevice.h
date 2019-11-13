@@ -15,6 +15,7 @@ public:
                   const double& Power);
 
     void Control(int Temperature);
+    virtual ~HeatingDevice();
 };
 
 #endif // HEATINGDEVICE_H

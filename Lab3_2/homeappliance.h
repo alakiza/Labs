@@ -28,6 +28,7 @@ public:
     HomeAppliance();
     HomeAppliance(std::string Concern,
                   std::string Model,
+                  int Year,
                   double Weight,
                   double Temperature,
                   Mode mode,
@@ -99,6 +100,8 @@ public:
     {
         return fYear;
     }
+
+    virtual ~HomeAppliance();
 
 };
 

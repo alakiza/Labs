@@ -13,7 +13,7 @@ Conditioner::Conditioner(const std::string model,
                          const double& weight,
                          const Mode& mode,
                          const double& temperature,
-                         const double& Power):HomeAppliance(concern, model, weight, temperature, mode, Power)
+                         const double& Power):HomeAppliance(concern, model, Year, weight, temperature, mode, Power)
 {
 
 }
@@ -40,6 +40,11 @@ void Conditioner::Control(int Temperature)
         SetMode(Mode::heat);
         std::cout << "Нагрев" << std::endl;
     }
+}
+
+Conditioner::~Conditioner()
+{
+
 }
 
 

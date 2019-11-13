@@ -16,14 +16,32 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    extensionslistform.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    risingpanel.cpp \
+    tclientthread.cpp \
+    textencionsbuilder.cpp \
+    tinternationalizer.cpp \
+    tlogger.cpp \
+    tmainserverthread.cpp \
+    tserverthread.cpp
 
 HEADERS += \
-    mainwindow.h
+    extensionslistform.h \
+    mainwindow.h \
+    risingpanel.h \
+    tclientthread.h \
+    textencionsbuilder.h \
+    tinternationalizer.h \
+    tlogger.h \
+    tmainserverthread.h \
+    tserverthread.h
 
 FORMS += \
-    mainwindow.ui
+    extensionslistform.ui \
+    mainwindow.ui \
+    risingpanel.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
