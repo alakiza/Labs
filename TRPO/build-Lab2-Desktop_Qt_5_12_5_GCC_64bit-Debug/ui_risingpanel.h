@@ -45,7 +45,7 @@ public:
         ConnectButton->setSizePolicy(sizePolicy);
         ConnectButton->setMinimumSize(QSize(24, 24));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../../../Connect.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/icons/Connect.png"), QSize(), QIcon::Normal, QIcon::Off);
         ConnectButton->setIcon(icon);
         ConnectButton->setIconSize(QSize(16, 16));
         ConnectButton->setFlat(true);
@@ -59,7 +59,7 @@ public:
         RefreshDevicesButton->setMinimumSize(QSize(24, 24));
         RefreshDevicesButton->setBaseSize(QSize(0, 0));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8("../../../Refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/new/icons/Refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
         RefreshDevicesButton->setIcon(icon1);
         RefreshDevicesButton->setIconSize(QSize(16, 16));
         RefreshDevicesButton->setFlat(true);

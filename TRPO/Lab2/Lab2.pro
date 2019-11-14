@@ -17,24 +17,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     extensionslistform.cpp \
+    logger.cpp \
     main.cpp \
     mainwindow.cpp \
     risingpanel.cpp \
     tclientthread.cpp \
     textencionsbuilder.cpp \
     tinternationalizer.cpp \
-    tlogger.cpp \
     tmainserverthread.cpp \
     tserverthread.cpp
 
 HEADERS += \
     extensionslistform.h \
+    logger.h \
     mainwindow.h \
     risingpanel.h \
     tclientthread.h \
     textencionsbuilder.h \
     tinternationalizer.h \
-    tlogger.h \
     tmainserverthread.h \
     tserverthread.h
 
@@ -47,3 +47,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    icons.qrc

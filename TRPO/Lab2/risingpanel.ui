@@ -32,8 +32,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset>
-       <normaloff>../../../Connect.png</normaloff>../../../Connect.png</iconset>
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/icons/Connect.png</normaloff>:/new/icons/Connect.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -70,8 +70,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset>
-       <normaloff>../../../Refresh.png</normaloff>../../../Refresh.png</iconset>
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/icons/Refresh.png</normaloff>:/new/icons/Refresh.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -92,6 +92,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

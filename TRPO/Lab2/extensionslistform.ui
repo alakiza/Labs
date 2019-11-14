@@ -32,8 +32,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset>
-       <normaloff>../../../Folder.png</normaloff>../../../Folder.png</iconset>
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/icons/Folder.png</normaloff>:/new/icons/Folder.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -58,8 +58,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset>
-       <normaloff>../../../Refresh.png</normaloff>../../../Refresh.png</iconset>
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/icons/Refresh.png</normaloff>:/new/icons/Refresh.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -148,8 +148,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset>
-       <normaloff>../../../Edit.png</normaloff>../../../Edit.png</iconset>
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/icons/Edit.png</normaloff>:/new/icons/Edit.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -174,8 +174,8 @@
       <string/>
      </property>
      <property name="icon">
-      <iconset>
-       <normaloff>../../../Build.png</normaloff>../../../Build.png</iconset>
+      <iconset resource="icons.qrc">
+       <normaloff>:/new/icons/Build.png</normaloff>:/new/icons/Build.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -190,6 +190,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

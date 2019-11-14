@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/sasha/QT/Labs/TRPO/build-Lab2-Android_armeabi_v7a_Clang_Qt_5_12_5_for_Android_ARMv7-Debug/android-build/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+            "map": [
+                {
+                    "source": "/opt/Qt5.12.5/5.12.5/android_armv7/src/android/java/res/values-ms/strings.xml",
+                    "from": {
+                        "startLines": "4,3,2,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "294,168,55,399",
+                        "endColumns": "104,125,112,89",
+                        "endOffsets": "394,289,163,484"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,160,286,399",
+                        "endColumns": "104,125,112,89",
+                        "endOffsets": "155,281,394,484"
+                    }
+                }
+            ]
+        }
+    ]
+}

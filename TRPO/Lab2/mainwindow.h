@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "risingpanel.h"
 #include "extensionslistform.h"
+#include "logger.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

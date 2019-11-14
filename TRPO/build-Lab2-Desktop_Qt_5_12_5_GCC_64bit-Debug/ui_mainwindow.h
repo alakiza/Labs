@@ -98,7 +98,7 @@ public:
         UploadButton->setSizePolicy(sizePolicy);
         UploadButton->setMinimumSize(QSize(36, 36));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../../../Upload.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/icons/Upload.png"), QSize(), QIcon::Normal, QIcon::Off);
         UploadButton->setIcon(icon);
         UploadButton->setIconSize(QSize(24, 24));
         UploadButton->setFlat(true);
@@ -109,7 +109,7 @@ public:
         DownloadButton->setObjectName(QString::fromUtf8("DownloadButton"));
         DownloadButton->setMinimumSize(QSize(36, 36));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8("../../../Download.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/new/icons/Download.png"), QSize(), QIcon::Normal, QIcon::Off);
         DownloadButton->setIcon(icon1);
         DownloadButton->setIconSize(QSize(24, 24));
         DownloadButton->setFlat(true);

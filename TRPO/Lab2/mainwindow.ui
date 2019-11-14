@@ -36,8 +36,8 @@
        <string/>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../../Upload.png</normaloff>../../../Upload.png</iconset>
+       <iconset resource="icons.qrc">
+        <normaloff>:/new/icons/Upload.png</normaloff>:/new/icons/Upload.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -62,8 +62,8 @@
        <string/>
       </property>
       <property name="icon">
-       <iconset>
-        <normaloff>../../../Download.png</normaloff>../../../Download.png</iconset>
+       <iconset resource="icons.qrc">
+        <normaloff>:/new/icons/Download.png</normaloff>:/new/icons/Download.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -221,6 +221,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

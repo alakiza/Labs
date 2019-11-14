@@ -55,7 +55,7 @@ public:
         pushButton->setSizePolicy(sizePolicy);
         pushButton->setMinimumSize(QSize(36, 36));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../../../Folder.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/icons/Folder.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton->setIcon(icon);
         pushButton->setIconSize(QSize(24, 24));
         pushButton->setFlat(true);
@@ -66,7 +66,7 @@ public:
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setMinimumSize(QSize(36, 36));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8("../../../Refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/new/icons/Refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_3->setIcon(icon1);
         pushButton_3->setIconSize(QSize(24, 24));
         pushButton_3->setFlat(true);
@@ -114,7 +114,7 @@ public:
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setMinimumSize(QSize(36, 36));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8("../../../Edit.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/new/icons/Edit.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_4->setIcon(icon2);
         pushButton_4->setIconSize(QSize(24, 24));
         pushButton_4->setFlat(true);
@@ -125,7 +125,7 @@ public:
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setMinimumSize(QSize(36, 36));
         QIcon icon3;
-        icon3.addFile(QString::fromUtf8("../../../Build.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/new/icons/Build.png"), QSize(), QIcon::Normal, QIcon::Off);
         pushButton_2->setIcon(icon3);
         pushButton_2->setIconSize(QSize(24, 24));
         pushButton_2->setFlat(true);

@@ -53,6 +53,8 @@ void MainWindow::on_ShowPanelButton_clicked()
         risingPanel->hide();
     else
         risingPanel->show();
+
+    Logger::Log(QDateTime::currentDateTime().toString() + " Нажали");
 }
 
 void MainWindow::ResizePanel()

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file>Build.png</file>
+        <file>Connect.png</file>
+        <file>Download.png</file>
+        <file>Edit.png</file>
+        <file>Folder.png</file>
+        <file>Refresh.png</file>
+        <file>Upload.png</file>
+    </qresource>
+</RCC>
