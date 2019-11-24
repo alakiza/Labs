@@ -10,6 +10,12 @@
     <height>320</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -33,7 +39,7 @@
      </property>
      <property name="icon">
       <iconset resource="icons.qrc">
-       <normaloff>:/new/icons/Connect.png</normaloff>:/new/icons/Connect.png</iconset>
+       <normaloff>:/new/icons/Connect_128x128.png</normaloff>:/new/icons/Connect_128x128.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -71,7 +77,7 @@
      </property>
      <property name="icon">
       <iconset resource="icons.qrc">
-       <normaloff>:/new/icons/Refresh.png</normaloff>:/new/icons/Refresh.png</iconset>
+       <normaloff>:/new/icons/Refresh_128x128.png</normaloff>:/new/icons/Refresh_128x128.png</iconset>
      </property>
      <property name="iconSize">
       <size>

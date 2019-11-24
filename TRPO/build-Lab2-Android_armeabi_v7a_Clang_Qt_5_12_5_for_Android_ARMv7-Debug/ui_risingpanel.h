@@ -34,18 +34,20 @@ public:
         if (RisingPanel->objectName().isEmpty())
             RisingPanel->setObjectName(QString::fromUtf8("RisingPanel"));
         RisingPanel->resize(240, 320);
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(RisingPanel->sizePolicy().hasHeightForWidth());
+        RisingPanel->setSizePolicy(sizePolicy);
         gridLayout_2 = new QGridLayout(RisingPanel);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         ConnectButton = new QPushButton(RisingPanel);
         ConnectButton->setObjectName(QString::fromUtf8("ConnectButton"));
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(ConnectButton->sizePolicy().hasHeightForWidth());
         ConnectButton->setSizePolicy(sizePolicy);
         ConnectButton->setMinimumSize(QSize(24, 24));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/new/icons/Connect.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/icons/Connect_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
         ConnectButton->setIcon(icon);
         ConnectButton->setIconSize(QSize(16, 16));
         ConnectButton->setFlat(true);
@@ -59,7 +61,7 @@ public:
         RefreshDevicesButton->setMinimumSize(QSize(24, 24));
         RefreshDevicesButton->setBaseSize(QSize(0, 0));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/new/icons/Refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/new/icons/Refresh_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
         RefreshDevicesButton->setIcon(icon1);
         RefreshDevicesButton->setIconSize(QSize(16, 16));
         RefreshDevicesButton->setFlat(true);

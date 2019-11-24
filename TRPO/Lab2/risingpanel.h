@@ -12,7 +12,7 @@ class RisingPanel : public QWidget
     Q_OBJECT
 
 public:
-    explicit RisingPanel(QWidget *parent = nullptr);
+    explicit RisingPanel(QWidget *parent = nullptr, double scaleX = 1, double scaleY = 1);
     ~RisingPanel();
 
 private:

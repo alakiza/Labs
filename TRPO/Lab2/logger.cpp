@@ -7,7 +7,7 @@ void Logger::Log(const QString &info)
     {
         QTextStream fs(&file);
 
-        fs << info << ;
+        //fs << info << ;
 
         file.close();
     }

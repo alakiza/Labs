@@ -6,6 +6,8 @@ class TExtencionsBuilder
 {
 public:
     TExtencionsBuilder();
+    void Build();
+    ~TExtencionsBuilder();
 };
 
 #endif // TEXTENCIONSBUILDER_H

@@ -742,13 +742,31 @@ compiler_rcc_clean:
 	-$(DEL_FILE) qrc_icons.cpp
 qrc_icons.cpp: ../Lab2/icons.qrc \
 		/opt/Qt5.12.5/5.12.5/gcc_64/bin/rcc \
-		../Lab2/Edit.png \
-		../Lab2/Upload.png \
-		../Lab2/Build.png \
+		../Lab2/Connect_96x96.png \
+		../Lab2/Edit_128x128.png \
+		../Lab2/Refresh_64x64.png \
+		../Lab2/Connect_64x64.png \
 		../Lab2/Download.png \
-		../Lab2/Refresh.png \
+		../Lab2/Edit_64x64.png \
+		../Lab2/Folder_64x64.png \
+		../Lab2/Upload_128x128.png \
+		../Lab2/Download_128x128.png \
+		../Lab2/Download_96x96.png \
+		../Lab2/Edit.png \
+		../Lab2/Upload_96x96.png \
+		../Lab2/Download_64x64.png \
+		../Lab2/Upload_64x64.png \
+		../Lab2/Connect_128x128.png \
 		../Lab2/Connect.png \
-		../Lab2/Folder.png
+		../Lab2/Folder_128x128.png \
+		../Lab2/Refresh_128x128.png \
+		../Lab2/Refresh.png \
+		../Lab2/Upload.png \
+		../Lab2/Folder.png \
+		../Lab2/Refresh_96x96.png \
+		../Lab2/Edit_96x96.png \
+		../Lab2/Folder_96x96.png \
+		../Lab2/Build.png
 	/opt/Qt5.12.5/5.12.5/gcc_64/bin/rcc -name icons ../Lab2/icons.qrc -o qrc_icons.cpp
 
 compiler_moc_predefs_make_all: moc_predefs.h
@@ -2102,6 +2120,7 @@ mainwindow.o: ../Lab2/mainwindow.cpp ../Lab2/mainwindow.h \
 		/opt/Qt5.12.5/5.12.5/gcc_64/include/QtWidgets/QSpacerItem \
 		/opt/Qt5.12.5/5.12.5/gcc_64/include/QtWidgets/QToolButton \
 		/opt/Qt5.12.5/5.12.5/gcc_64/include/QtWidgets/qtoolbutton.h \
+		/opt/Qt5.12.5/5.12.5/gcc_64/include/QtWidgets/QDesktopWidget \
 		/opt/Qt5.12.5/5.12.5/gcc_64/include/QtWidgets/QMessageBox \
 		/opt/Qt5.12.5/5.12.5/gcc_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../Lab2/mainwindow.cpp

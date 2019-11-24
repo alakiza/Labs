@@ -44,10 +44,10 @@ public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
     QPushButton *UploadButton;
-    QPushButton *DownloadButton;
-    QSpacerItem *horizontalSpacer;
     QListView *EntrylistView;
     QToolButton *ShowPanelButton;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *DownloadButton;
     QMenuBar *menuBar;
     QMenu *FileMenu;
     QMenu *menu_2;
@@ -98,27 +98,12 @@ public:
         UploadButton->setSizePolicy(sizePolicy);
         UploadButton->setMinimumSize(QSize(36, 36));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/new/icons/Upload.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/icons/Upload_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
         UploadButton->setIcon(icon);
         UploadButton->setIconSize(QSize(24, 24));
         UploadButton->setFlat(true);
 
         gridLayout->addWidget(UploadButton, 0, 1, 1, 1);
-
-        DownloadButton = new QPushButton(centralwidget);
-        DownloadButton->setObjectName(QString::fromUtf8("DownloadButton"));
-        DownloadButton->setMinimumSize(QSize(36, 36));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/new/icons/Download.png"), QSize(), QIcon::Normal, QIcon::Off);
-        DownloadButton->setIcon(icon1);
-        DownloadButton->setIconSize(QSize(24, 24));
-        DownloadButton->setFlat(true);
-
-        gridLayout->addWidget(DownloadButton, 0, 0, 1, 1);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer, 0, 2, 1, 1);
 
         EntrylistView = new QListView(centralwidget);
         EntrylistView->setObjectName(QString::fromUtf8("EntrylistView"));
@@ -127,18 +112,41 @@ public:
 
         ShowPanelButton = new QToolButton(centralwidget);
         ShowPanelButton->setObjectName(QString::fromUtf8("ShowPanelButton"));
+        sizePolicy.setHeightForWidth(ShowPanelButton->sizePolicy().hasHeightForWidth());
+        ShowPanelButton->setSizePolicy(sizePolicy);
+        ShowPanelButton->setMinimumSize(QSize(24, 24));
 
         gridLayout->addWidget(ShowPanelButton, 0, 3, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 0, 2, 1, 1);
+
+        DownloadButton = new QPushButton(centralwidget);
+        DownloadButton->setObjectName(QString::fromUtf8("DownloadButton"));
+        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(DownloadButton->sizePolicy().hasHeightForWidth());
+        DownloadButton->setSizePolicy(sizePolicy1);
+        DownloadButton->setMinimumSize(QSize(36, 36));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/new/icons/Download_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
+        DownloadButton->setIcon(icon1);
+        DownloadButton->setIconSize(QSize(24, 24));
+        DownloadButton->setFlat(true);
+
+        gridLayout->addWidget(DownloadButton, 0, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 640, 22));
-        QSizePolicy sizePolicy1(QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(menuBar->sizePolicy().hasHeightForWidth());
-        menuBar->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(menuBar->sizePolicy().hasHeightForWidth());
+        menuBar->setSizePolicy(sizePolicy2);
         menuBar->setLayoutDirection(Qt::LeftToRight);
         menuBar->setNativeMenuBar(true);
         FileMenu = new QMenu(menuBar);
@@ -189,8 +197,8 @@ public:
         action_13->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \321\207\320\265\321\200\320\265\320\267", nullptr));
         action->setText(QApplication::translate("MainWindow", "\320\241\320\277\321\200\320\260\320\262\320\272\320\260", nullptr));
         UploadButton->setText(QString());
-        DownloadButton->setText(QString());
         ShowPanelButton->setText(QApplication::translate("MainWindow", "...", nullptr));
+        DownloadButton->setText(QString());
         FileMenu->setTitle(QApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
         menu_2->setTitle(QApplication::translate("MainWindow", "\320\240\320\260\321\201\321\210\320\270\321\200\320\265\320\275\320\270\321\217", nullptr));
         menu_4->setTitle(QApplication::translate("MainWindow", "\320\241\320\277\321\200\320\260\320\262\320\272\320\260", nullptr));
