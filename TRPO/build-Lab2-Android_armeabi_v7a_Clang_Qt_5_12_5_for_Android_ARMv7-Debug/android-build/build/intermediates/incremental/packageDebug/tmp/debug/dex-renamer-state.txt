@@ -1,4 +1,4 @@
-#Wed Nov 20 23:11:39 MSK 2019
+#Wed Nov 27 23:55:06 MSK 2019
 base.0=/home/sasha/QT/Labs/TRPO/build-Lab2-Android_armeabi_v7a_Clang_Qt_5_12_5_for_Android_ARMv7-Debug/android-build/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

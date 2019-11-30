@@ -11,11 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Расширения</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="OpenDirectoryButton">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -33,7 +33,7 @@
      </property>
      <property name="icon">
       <iconset resource="icons.qrc">
-       <normaloff>:/new/icons/Folder.png</normaloff>:/new/icons/Folder.png</iconset>
+       <normaloff>:/new/icons/Folder_128x128.png</normaloff>:/new/icons/Folder_128x128.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -47,7 +47,7 @@
     </widget>
    </item>
    <item row="0" column="3">
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="RefreshButton">
      <property name="minimumSize">
       <size>
        <width>36</width>
@@ -59,7 +59,7 @@
      </property>
      <property name="icon">
       <iconset resource="icons.qrc">
-       <normaloff>:/new/icons/Refresh.png</normaloff>:/new/icons/Refresh.png</iconset>
+       <normaloff>:/new/icons/Refresh_128x128.png</normaloff>:/new/icons/Refresh_128x128.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -81,7 +81,7 @@
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <property name="elideMode">
       <enum>Qt::ElideNone</enum>
@@ -137,7 +137,7 @@
     </spacer>
    </item>
    <item row="0" column="1">
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="EditButton">
      <property name="minimumSize">
       <size>
        <width>36</width>
@@ -149,7 +149,7 @@
      </property>
      <property name="icon">
       <iconset resource="icons.qrc">
-       <normaloff>:/new/icons/Edit.png</normaloff>:/new/icons/Edit.png</iconset>
+       <normaloff>:/new/icons/Edit_128x128.png</normaloff>:/new/icons/Edit_128x128.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -163,7 +163,7 @@
     </widget>
    </item>
    <item row="0" column="4">
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="BuildButton">
      <property name="minimumSize">
       <size>
        <width>36</width>
@@ -175,7 +175,7 @@
      </property>
      <property name="icon">
       <iconset resource="icons.qrc">
-       <normaloff>:/new/icons/Build.png</normaloff>:/new/icons/Build.png</iconset>
+       <normaloff>:/new/icons/Build_128x128.png</normaloff>:/new/icons/Build_128x128.png</iconset>
      </property>
      <property name="iconSize">
       <size>

@@ -4,3 +4,13 @@ TClientThread::TClientThread()
 {
 
 }
+
+void TClientThread::run()
+{
+
+}
+
+TClientThread::~TClientThread()
+{
+
+}

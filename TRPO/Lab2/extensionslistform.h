@@ -12,7 +12,7 @@ class ExtensionsListForm : public QDialog
     Q_OBJECT
 
 public:
-    explicit ExtensionsListForm(QWidget *parent = nullptr);
+    explicit ExtensionsListForm(double scaleX, double scaleY, QWidget *parent = nullptr);
     ~ExtensionsListForm();
 
 private:

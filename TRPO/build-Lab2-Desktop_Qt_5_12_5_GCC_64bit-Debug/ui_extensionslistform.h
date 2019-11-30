@@ -26,8 +26,8 @@ class Ui_ExtensionsListForm
 {
 public:
     QGridLayout *gridLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_3;
+    QPushButton *OpenDirectoryButton;
+    QPushButton *RefreshButton;
     QTabWidget *tabWidget;
     QWidget *tab;
     QGridLayout *gridLayout_2;
@@ -36,8 +36,8 @@ public:
     QGridLayout *gridLayout_3;
     QListView *listView_2;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_2;
+    QPushButton *EditButton;
+    QPushButton *BuildButton;
 
     void setupUi(QDialog *ExtensionsListForm)
     {
@@ -46,32 +46,32 @@ public:
         ExtensionsListForm->resize(320, 480);
         gridLayout = new QGridLayout(ExtensionsListForm);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        pushButton = new QPushButton(ExtensionsListForm);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        OpenDirectoryButton = new QPushButton(ExtensionsListForm);
+        OpenDirectoryButton->setObjectName(QString::fromUtf8("OpenDirectoryButton"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
-        pushButton->setSizePolicy(sizePolicy);
-        pushButton->setMinimumSize(QSize(36, 36));
+        sizePolicy.setHeightForWidth(OpenDirectoryButton->sizePolicy().hasHeightForWidth());
+        OpenDirectoryButton->setSizePolicy(sizePolicy);
+        OpenDirectoryButton->setMinimumSize(QSize(36, 36));
         QIcon icon;
-        icon.addFile(QString::fromUtf8(":/new/icons/Folder.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon);
-        pushButton->setIconSize(QSize(24, 24));
-        pushButton->setFlat(true);
+        icon.addFile(QString::fromUtf8(":/new/icons/Folder_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
+        OpenDirectoryButton->setIcon(icon);
+        OpenDirectoryButton->setIconSize(QSize(24, 24));
+        OpenDirectoryButton->setFlat(true);
 
-        gridLayout->addWidget(pushButton, 0, 0, 1, 1);
+        gridLayout->addWidget(OpenDirectoryButton, 0, 0, 1, 1);
 
-        pushButton_3 = new QPushButton(ExtensionsListForm);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setMinimumSize(QSize(36, 36));
+        RefreshButton = new QPushButton(ExtensionsListForm);
+        RefreshButton->setObjectName(QString::fromUtf8("RefreshButton"));
+        RefreshButton->setMinimumSize(QSize(36, 36));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/new/icons/Refresh.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_3->setIcon(icon1);
-        pushButton_3->setIconSize(QSize(24, 24));
-        pushButton_3->setFlat(true);
+        icon1.addFile(QString::fromUtf8(":/new/icons/Refresh_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
+        RefreshButton->setIcon(icon1);
+        RefreshButton->setIconSize(QSize(24, 24));
+        RefreshButton->setFlat(true);
 
-        gridLayout->addWidget(pushButton_3, 0, 3, 1, 1);
+        gridLayout->addWidget(RefreshButton, 0, 3, 1, 1);
 
         tabWidget = new QTabWidget(ExtensionsListForm);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
@@ -110,32 +110,32 @@ public:
 
         gridLayout->addItem(horizontalSpacer, 0, 2, 1, 1);
 
-        pushButton_4 = new QPushButton(ExtensionsListForm);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setMinimumSize(QSize(36, 36));
+        EditButton = new QPushButton(ExtensionsListForm);
+        EditButton->setObjectName(QString::fromUtf8("EditButton"));
+        EditButton->setMinimumSize(QSize(36, 36));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/new/icons/Edit.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_4->setIcon(icon2);
-        pushButton_4->setIconSize(QSize(24, 24));
-        pushButton_4->setFlat(true);
+        icon2.addFile(QString::fromUtf8(":/new/icons/Edit_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
+        EditButton->setIcon(icon2);
+        EditButton->setIconSize(QSize(24, 24));
+        EditButton->setFlat(true);
 
-        gridLayout->addWidget(pushButton_4, 0, 1, 1, 1);
+        gridLayout->addWidget(EditButton, 0, 1, 1, 1);
 
-        pushButton_2 = new QPushButton(ExtensionsListForm);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setMinimumSize(QSize(36, 36));
+        BuildButton = new QPushButton(ExtensionsListForm);
+        BuildButton->setObjectName(QString::fromUtf8("BuildButton"));
+        BuildButton->setMinimumSize(QSize(36, 36));
         QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/new/icons/Build.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_2->setIcon(icon3);
-        pushButton_2->setIconSize(QSize(24, 24));
-        pushButton_2->setFlat(true);
+        icon3.addFile(QString::fromUtf8(":/new/icons/Build_128x128.png"), QSize(), QIcon::Normal, QIcon::Off);
+        BuildButton->setIcon(icon3);
+        BuildButton->setIconSize(QSize(24, 24));
+        BuildButton->setFlat(true);
 
-        gridLayout->addWidget(pushButton_2, 0, 4, 1, 1);
+        gridLayout->addWidget(BuildButton, 0, 4, 1, 1);
 
 
         retranslateUi(ExtensionsListForm);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(ExtensionsListForm);
@@ -143,13 +143,13 @@ public:
 
     void retranslateUi(QDialog *ExtensionsListForm)
     {
-        ExtensionsListForm->setWindowTitle(QApplication::translate("ExtensionsListForm", "Dialog", nullptr));
-        pushButton->setText(QString());
-        pushButton_3->setText(QString());
+        ExtensionsListForm->setWindowTitle(QApplication::translate("ExtensionsListForm", "\320\240\320\260\321\201\321\210\320\270\321\200\320\265\320\275\320\270\321\217", nullptr));
+        OpenDirectoryButton->setText(QString());
+        RefreshButton->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("ExtensionsListForm", "\320\227\320\260\320\263\321\200\321\203\320\267\320\272\320\260", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("ExtensionsListForm", "\320\222\321\213\320\263\321\200\321\203\320\267\320\272\320\260", nullptr));
-        pushButton_4->setText(QString());
-        pushButton_2->setText(QString());
+        EditButton->setText(QString());
+        BuildButton->setText(QString());
     } // retranslateUi
 
 };

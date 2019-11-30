@@ -25,7 +25,9 @@ SOURCES += \
     textencionsbuilder.cpp \
     tinternationalizer.cpp \
     tmainserverthread.cpp \
-    tserverthread.cpp
+    tserverthread.cpp \
+    tsettings.cpp \
+    tsettingsmaster.cpp
 
 HEADERS += \
     extensionslistform.h \
@@ -36,7 +38,9 @@ HEADERS += \
     textencionsbuilder.h \
     tinternationalizer.h \
     tmainserverthread.h \
-    tserverthread.h
+    tserverthread.h \
+    tsettings.h \
+    tsettingsmaster.h
 
 FORMS += \
     extensionslistform.ui \

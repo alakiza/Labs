@@ -9,7 +9,7 @@
 class TInternationalizer
 {
 private:
-    QHash<QTreeWidgetItem*, QString> fcaptions;
+    QTreeWidgetItem* fcaptions;
     QString fDefaultLanguage;
 
     void CreateDefaultTranslation();
@@ -20,6 +20,7 @@ public:
     QTreeWidgetItem* GetDefaultLanguage();
 
     QString GetDefaultLanguageName();
+    void SetDefaultLanguage(QString& DefaultLanguage);
 
     ~TInternationalizer();
 };

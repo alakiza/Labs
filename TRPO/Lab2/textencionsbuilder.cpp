@@ -4,3 +4,13 @@ TExtencionsBuilder::TExtencionsBuilder()
 {
 
 }
+
+void TExtencionsBuilder::Build()
+{
+
+}
+
+TExtencionsBuilder::~TExtencionsBuilder()
+{
+
+}

@@ -57,7 +57,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     #ifdef ANDROID
         risingPanel->setGeometry(0, 0, this->width(), this->height());
-    #elif
+    #else
         risingPanel->setGeometry(this->width()-200, 0, 200, this->height());
     #endif
 
@@ -115,13 +115,18 @@ void MainWindow::ResizePanel()
     int height = ui->menuBar->height() + ui->ShowPanelButton->y() + ui->ShowPanelButton->height();
     #ifdef ANDROID
         risingPanel->setGeometry(0, height, this->width(), this->height()-height);
-    #elif
+    #else
         risingPanel->setGeometry(this->width()-200, height, 200, this->height()-height);
     #endif
 }
 
 void MainWindow::on_ExtensionsListShow_Action_triggered()
 {
-    ExtensionsListForm* extListForm = new ExtensionsListForm(nullptr);
+    double coeffX = QApplication::desktop()->physicalDpiX()/96.0;
+    double coeffY = QApplication::desktop()->physicalDpiY()/96.0;
+    ExtensionsListForm* extListForm = new ExtensionsListForm(coeffX, coeffY, nullptr);
+    #ifdef ANDROID
+        extListForm->setGeometry(0, 0, this->width(), this->height());
+    #endif
     extListForm->exec();
 }
