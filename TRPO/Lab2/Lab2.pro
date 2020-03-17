@@ -1,4 +1,5 @@
 QT       += core gui
+QT += xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,6 +26,7 @@ SOURCES += \
     textencionsbuilder.cpp \
     tinternationalizer.cpp \
     tmainserverthread.cpp \
+    tnetworkscaner.cpp \
     tserverthread.cpp \
     tsettings.cpp \
     tsettingsmaster.cpp
@@ -38,6 +40,7 @@ HEADERS += \
     textencionsbuilder.h \
     tinternationalizer.h \
     tmainserverthread.h \
+    tnetworkscaner.h \
     tserverthread.h \
     tsettings.h \
     tsettingsmaster.h

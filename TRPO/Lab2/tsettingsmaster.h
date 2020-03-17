@@ -6,12 +6,20 @@
 class TSettingsMaster
 {
 public:
-    TSettingsMaster* instance();
-
+    static TSettingsMaster* instance()
+    {
+        if(!finstance)
+            finstance = new TSettingsMaster();
+        return finstance;
+    }
+    QString Language();
+    QString IP();
+    int32_t Port();
     ~TSettingsMaster();
+    TSettings *Settings();
 private:
     TSettingsMaster();
-    static TSettings fSettings;
+    TSettings* fSettings;
     static TSettingsMaster* finstance;
 };
 

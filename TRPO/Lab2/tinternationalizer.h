@@ -1,9 +1,7 @@
 #ifndef TINTERNATIONALIZER_H
 #define TINTERNATIONALIZER_H
 #include <QTreeWidget>
-#include <QXmlStreamWriter>
-#include <QXmlStreamReader>
-#include <QXmlStreamAttribute>
+#include <QtXml>
 #include <QFile>
 
 class TInternationalizer

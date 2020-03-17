@@ -1,5 +1,10 @@
 #include "tinternationalizer.h"
 
+void TInternationalizer::CreateDefaultTranslation()
+{
+
+}
+
 TInternationalizer::TInternationalizer()
 {
 

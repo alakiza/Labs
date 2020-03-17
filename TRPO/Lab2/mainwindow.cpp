@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "QDesktopWidget"
-#include <QMessageBox>
-#include "QtNetwork/QAbstractSocket"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -79,19 +77,11 @@ void MainWindow::resizeEvent(QResizeEvent *re)
     if(risingPanel->isVisible()) ResizePanel();
 }
 
-void MainWindow::on_quit_Menu_action_changed()
-{
-
-}
-
-void MainWindow::on_quit_Menu_action_hovered()
-{
-   // QMessageBox::information(0, "Information", "hovered") ;
-}
-
 void MainWindow::on_quit_Menu_action_triggered()
 {
-
+    TSettingsMaster* settings = TSettingsMaster::instance();
+    settings->Settings()->SaveToFile(SDefaultFileName);
+    delete settings;
 }
 
 void MainWindow::on_action_Qt_triggered()
@@ -129,4 +119,44 @@ void MainWindow::on_ExtensionsListShow_Action_triggered()
         extListForm->setGeometry(0, 0, this->width(), this->height());
     #endif
     extListForm->exec();
+}
+
+void MainWindow::on_action_Download_triggered()
+{
+
+}
+
+void MainWindow::on_action_Upload_triggered()
+{
+
+}
+
+void MainWindow::on_action_About_triggered()
+{
+
+}
+
+void MainWindow::on_action_Editor_triggered()
+{
+
+}
+
+void MainWindow::on_action_Rebuild_triggered()
+{
+
+}
+
+void MainWindow::on_action_DownloadThrough_triggered()
+{
+
+}
+
+void MainWindow::on_action_UploadThrough_triggered()
+{
+
+}
+
+void MainWindow::on_action_Information_triggered()
+{
+
 }

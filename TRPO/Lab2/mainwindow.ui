@@ -18,6 +18,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0" colspan="4">
+     <widget class="QListView" name="EntrylistView"/>
+    </item>
     <item row="0" column="1">
      <widget class="QPushButton" name="UploadButton">
       <property name="sizePolicy">
@@ -50,9 +53,6 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0" colspan="4">
-     <widget class="QListView" name="EntrylistView"/>
-    </item>
     <item row="0" column="3">
      <widget class="QToolButton" name="ShowPanelButton">
       <property name="sizePolicy">
@@ -71,19 +71,6 @@
        <string>...</string>
       </property>
      </widget>
-    </item>
-    <item row="0" column="2">
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
     </item>
     <item row="0" column="0">
      <widget class="QPushButton" name="DownloadButton">
@@ -117,6 +104,19 @@
       </property>
      </widget>
     </item>
+    <item row="0" column="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -144,10 +144,10 @@
     <property name="title">
      <string>Файл</string>
     </property>
-    <addaction name="action_3"/>
-    <addaction name="action_12"/>
-    <addaction name="action_4"/>
-    <addaction name="action_13"/>
+    <addaction name="action_Download"/>
+    <addaction name="action_DownloadThrough"/>
+    <addaction name="action_Upload"/>
+    <addaction name="action_UploadThrough"/>
     <addaction name="separator"/>
     <addaction name="quit_Menu_action"/>
    </widget>
@@ -155,19 +155,19 @@
     <property name="title">
      <string>Расширения</string>
     </property>
-    <addaction name="action_8"/>
+    <addaction name="action_Editor"/>
     <addaction name="ExtensionsListShow_Action"/>
     <addaction name="separator"/>
-    <addaction name="action_10"/>
+    <addaction name="action_Rebuild"/>
    </widget>
    <widget class="QMenu" name="menu_4">
     <property name="title">
      <string>Справка</string>
     </property>
-    <addaction name="action"/>
+    <addaction name="action_Information"/>
     <addaction name="separator"/>
     <addaction name="action_Qt"/>
-    <addaction name="action_7"/>
+    <addaction name="action_About"/>
    </widget>
    <addaction name="FileMenu"/>
    <addaction name="menu_2"/>
@@ -178,27 +178,17 @@
     <string>Выход</string>
    </property>
   </action>
-  <action name="action_3">
+  <action name="action_Download">
    <property name="text">
     <string>Скачать</string>
    </property>
   </action>
-  <action name="action_4">
+  <action name="action_Upload">
    <property name="text">
     <string>Выгрузить</string>
    </property>
   </action>
-  <action name="action_5">
-   <property name="text">
-    <string>Поиск</string>
-   </property>
-  </action>
-  <action name="action_6">
-   <property name="text">
-    <string>Соединение</string>
-   </property>
-  </action>
-  <action name="action_7">
+  <action name="action_About">
    <property name="text">
     <string>О программе</string>
    </property>
@@ -208,7 +198,7 @@
     <string>О Qt</string>
    </property>
   </action>
-  <action name="action_8">
+  <action name="action_Editor">
    <property name="text">
     <string>Редактор</string>
    </property>
@@ -218,22 +208,22 @@
     <string>Список</string>
    </property>
   </action>
-  <action name="action_10">
+  <action name="action_Rebuild">
    <property name="text">
     <string>Пересобрать</string>
    </property>
   </action>
-  <action name="action_12">
+  <action name="action_DownloadThrough">
    <property name="text">
     <string>Скачать через</string>
    </property>
   </action>
-  <action name="action_13">
+  <action name="action_UploadThrough">
    <property name="text">
     <string>Выгрузить через</string>
    </property>
   </action>
-  <action name="action">
+  <action name="action_Information">
    <property name="text">
     <string>Справка</string>
    </property>

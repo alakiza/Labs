@@ -5,6 +5,10 @@
 #include "risingpanel.h"
 #include "extensionslistform.h"
 #include "logger.h"
+#include <QDesktopWidget>
+#include <QMessageBox>
+#include "QtNetwork/QAbstractSocket"
+#include "tsettingsmaster.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,10 +26,6 @@ protected:
     virtual void resizeEvent(QResizeEvent* re);
 
 private slots:
-    void on_quit_Menu_action_changed();
-
-    void on_quit_Menu_action_hovered();
-
     void on_quit_Menu_action_triggered();
 
     void on_action_Qt_triggered();
@@ -33,6 +33,22 @@ private slots:
     void on_ShowPanelButton_clicked();
 
     void on_ExtensionsListShow_Action_triggered();
+
+    void on_action_Download_triggered();
+
+    void on_action_Upload_triggered();
+
+    void on_action_About_triggered();
+
+    void on_action_Editor_triggered();
+
+    void on_action_Rebuild_triggered();
+
+    void on_action_DownloadThrough_triggered();
+
+    void on_action_UploadThrough_triggered();
+
+    void on_action_Information_triggered();
 
 private:
     Ui::MainWindow *ui;
